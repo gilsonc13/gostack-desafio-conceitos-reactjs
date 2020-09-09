@@ -13,9 +13,8 @@ function App() {
   }, []);
 
   async function handleAddRepository() {
-      
     const response = await api.post('repositories', {
-      title: `Desafio React.js ${Date.now()}`,
+      title: `Repositório ${Date.now()}`,
       url: "http://github.com/gilsonc13",
       techs: ["React.js", "Node.js"]
     });
